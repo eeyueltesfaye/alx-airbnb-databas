@@ -1,12 +1,10 @@
 #  Airbnb Clone - Entity Relationship Diagram (ERD)
 
----
 
 ## 🎯 Purpose
 
 This document outlines the **Entity-Relationship Diagram (ERD)** for the Airbnb Clone project. The ERD visually represents the structure of the database, the entities involved, their attributes, and how they relate to each other.
 
----
 
 ## 🧩 Entities and Key Attributes
 
@@ -57,7 +55,6 @@ This document outlines the **Entity-Relationship Diagram (ERD)** for the Airbnb 
 - `message_body` (TEXT, NOT NULL)
 - `sent_at` (TIMESTAMP)
 
----
 
 ## 🔗 Entity Relationships
 
@@ -69,12 +66,11 @@ This document outlines the **Entity-Relationship Diagram (ERD)** for the Airbnb 
 - **User–Review**: 1-to-Many (Each User can write multiple Reviews)
 - **User–Message**: Self-referencing 1-to-Many (User sends/receives many Messages)
 
----
 
 ##  ER Diagram 
 
 
-![Alt Text](Airbnb ER_Diagram.png)
+![Alt Text](Airbnb%20ER_Diagram.png)
 
 
 ### 📌 Design Notes
@@ -85,6 +81,6 @@ This document outlines the **Entity-Relationship Diagram (ERD)** for the Airbnb 
 - Indexes and constraints like UNIQUE and NOT NULL are applied as per entity requirements.
 
 - Relationships are drawn using Crow’s Foot Notation for clarity.
-
+---
 #### ✅ Summary
 This ERD serves as the blueprint for implementing the relational schema of the Airbnb Clone application. It defines the structure, relationships, and constraints necessary to support key features such as property listing, booking, payment, user roles, reviews, and messaging.
