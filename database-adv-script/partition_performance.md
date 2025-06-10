@@ -1,4 +1,4 @@
-#  Partitioning Optimization Report
+#  Partition Performance Report
 
 ##  Objective
 Partition the `Booking` table based on **start_date** to improve query performance.
