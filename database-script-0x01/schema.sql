@@ -10,7 +10,6 @@ CREATE TABLE User (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-CREATE INDEX idx_user_email ON User(email);
 
 -- PROPERTY TABLE
 CREATE TABLE Property (
@@ -25,7 +24,6 @@ CREATE TABLE Property (
     FOREIGN KEY (host_id) REFERENCES User(user_id)
 );
 
-CREATE INDEX idx_property_host ON Property(host_id);
 
 -- BOOKING TABLE
 CREATE TABLE Booking (
@@ -41,8 +39,6 @@ CREATE TABLE Booking (
     FOREIGN KEY (user_id) REFERENCES User(user_id)
 );
 
-CREATE INDEX idx_booking_property ON Booking(property_id);
-CREATE INDEX idx_booking_user ON Booking(user_id);
 
 -- PAYMENT TABLE
 CREATE TABLE Payment (
@@ -54,7 +50,6 @@ CREATE TABLE Payment (
     FOREIGN KEY (booking_id) REFERENCES Booking(booking_id)
 );
 
-CREATE INDEX idx_payment_booking ON Payment(booking_id);
 
 -- REVIEW TABLE
 CREATE TABLE Review (
